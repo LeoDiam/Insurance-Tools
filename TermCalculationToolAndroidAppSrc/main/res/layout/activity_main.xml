@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0ECB3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ageV"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Ηλικία (Τρέχουσα):"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ageT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ageT"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/capitalV"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="35dp"
+        android:text="Ασφαλισμένο Κεφάλαιο:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/capitalT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageV" />
+
+    <EditText
+        android:id="@+id/capitalT"
+        android:layout_width="215dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capitalV"
+        app:layout_constraintTop_toBottomOf="@+id/ageT" />
+
+    <TextView
+        android:id="@+id/durationV"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="35dp"
+        android:text="Διάρκεια εώς 25 χρόνια:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/durationT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capitalV" />
+
+    <EditText
+        android:id="@+id/durationT"
+        android:layout_width="215dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/durationV"
+        app:layout_constraintTop_toBottomOf="@+id/capitalT" />
+
+    <Button
+        android:id="@+id/calculateButtonThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="96dp"
+        android:text="ΥΠΟΛΟΓΙΣΜΟΣ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/continueButtonThird"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/firstFeeV"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="35dp"
+        android:text="Ετήσιο Ασφάλιστρο Πρώτου Έτους:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/firstFeeT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durationV" />
+
+    <TextView
+        android:id="@+id/firstFeeT"
+        android:layout_width="215dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="6dp"
+        android:background="#E4E2E2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstFeeV"
+        app:layout_constraintTop_toBottomOf="@+id/durationT" />
+
+    <TextView
+        android:id="@+id/averagetenyearsfeeV"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="35dp"
+        android:text="Μέσο Ασφάλιστρο 10 πρώτων ετών:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/averagetenyearsfeeT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstFeeV" />
+
+    <TextView
+        android:id="@+id/averagetenyearsfeeT"
+        android:layout_width="215dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="6dp"
+        android:background="#E4E2E2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/averagetenyearsfeeV"
+        app:layout_constraintTop_toBottomOf="@+id/firstFeeT" />
+
+    <Button
+        android:id="@+id/continueButtonThird"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="249dp"
+        android:layout_marginEnd="50dp"
+        android:text="Τελος"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
