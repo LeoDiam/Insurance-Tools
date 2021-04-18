@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E892C"
+    tools:context=".SecondaryActivity">
+
+
+    <TextView
+        android:id="@+id/wanted_pensionV"
+        android:layout_width="146dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Επιθυμητό σύνολο σύνταξης:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/wanted_pensionT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/wanted_pensionT"
+        android:layout_width="215dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wanted_pensionV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/needed_private_pensionV"
+        android:layout_width="146dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Απαιτούμενη Ιδιωτική Σύνταξη:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/needed_private_pensionT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wanted_pensionV" />
+
+    <TextView
+        android:id="@+id/capital_neededV"
+        android:layout_width="160dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Απαιτούμενο Κεφάλαιο (Σύνταξη εώς τα 85):"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/capital_neededT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/needed_private_pensionV" />
+
+    <TextView
+        android:id="@+id/needed_private_pensionT"
+        android:layout_width="215dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="58dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/needed_private_pensionV"
+        app:layout_constraintTop_toBottomOf="@+id/wanted_pensionT" />
+
+    <TextView
+        android:id="@+id/starting_monthly_capitalV"
+        android:layout_width="160dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Απαιτούμενο Αρχικό Ποσό Μηνιαίας Αποταμίευσης:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/starting_monthly_capitalT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capital_neededV" />
+
+    <TextView
+        android:id="@+id/starting_monthly_capitalT"
+        android:layout_width="215dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/starting_monthly_capitalV"
+        app:layout_constraintTop_toBottomOf="@+id/capital_neededT" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="249dp"
+        android:layout_marginEnd="50dp"
+        android:text="Συνεχεια"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/capital_neededT"
+        android:layout_width="215dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capital_neededV"
+        app:layout_constraintTop_toBottomOf="@+id/needed_private_pensionT" />
+
+    <TextView
+        android:id="@+id/moreLogicalCostV"
+        android:layout_width="393dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="199dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starting_monthly_capitalV" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="64dp"
+        android:text="Υπολογισμος"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/continueButton"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

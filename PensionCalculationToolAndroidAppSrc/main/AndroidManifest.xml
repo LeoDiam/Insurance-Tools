@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pension_calculation_tool">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pension_Calculation_Tool">
+        <activity android:name=".ThirdActivity"
+            android:label="Υπολογισμός Επενδυτικού"
+            ></activity>
+        <activity android:name=".SecondaryActivity"
+            android:label="Υπολογισμός Ατομικής Αποταμίευσης"
+            />
+        <activity android:name=".MainActivity"
+            android:label="Υπολογισμός Κρατικής Σύνταξης">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

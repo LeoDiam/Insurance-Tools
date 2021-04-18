@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E892C"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/starting_per_monthV"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:text="Αρχικό Ποσό Μηνιαίας Αποταμίευσης:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/starting_per_monthT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/starting_per_monthT"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/starting_per_monthV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/starting_capitalV"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="28dp"
+        android:text="Αρχικό Ποσό Εφάπαξ Καταβολής:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/starting_capitalT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starting_per_monthV" />
+
+    <EditText
+        android:id="@+id/starting_capitalT"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/starting_capitalV"
+        app:layout_constraintTop_toBottomOf="@+id/starting_per_monthT" />
+
+    <TextView
+        android:id="@+id/yearRevenueV"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="28dp"
+        android:text="Ενδεικτική Ετήσια Απόδοση:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/yearRevenueT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starting_capitalV" />
+
+    <EditText
+        android:id="@+id/yearRevenueT"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yearRevenueV"
+        app:layout_constraintTop_toBottomOf="@+id/starting_capitalT" />
+
+    <TextView
+        android:id="@+id/yearsChangeV"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="28dp"
+        android:text="Ετήσια Αναπροσαρμογή (%) :"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/yearsChangeT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearRevenueV" />
+
+    <EditText
+        android:id="@+id/yearsChangeT"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yearsChangeV"
+        app:layout_constraintTop_toBottomOf="@+id/yearRevenueT" />
+
+    <Button
+        android:id="@+id/calculateButtonThird"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="96dp"
+        android:text="ΥΠΟΛΟΓΙΣΜΟΣ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/continueButtonThird"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/finalValueV"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="28dp"
+        android:text="Ενδεικτική Αξία στη Λήξη:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/finalValueT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearsChangeV" />
+
+    <TextView
+        android:id="@+id/finalValueT"
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/finalValueV"
+        app:layout_constraintTop_toBottomOf="@+id/yearsChangeT" />
+
+    <TextView
+        android:id="@+id/finalValuePerMonthV"
+        android:layout_width="135dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="28dp"
+        android:text="Ενδεικτική Μηνιαία Σύνταξη στη Λήξη:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/finalValuePerMonthT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalValueV" />
+
+    <TextView
+        android:id="@+id/finalValuePerMonthT"
+        android:layout_width="215dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/finalValuePerMonthV"
+        app:layout_constraintTop_toBottomOf="@+id/finalValueT" />
+
+    <Button
+        android:id="@+id/continueButtonThird"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="249dp"
+        android:layout_marginEnd="50dp"
+        android:text="ΤΕΛΟΣ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
